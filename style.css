@@ -1,0 +1,39 @@
+#header {
+  height:100px;
+  position: fixed;
+  font-size: larger;
+  background-color: #61b1c8;
+  
+}
+
+h1{
+  font-size: larger;
+  font-weight: bold;
+}
+ 
+    .row.content {height: 1500px}
+    
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    .post-container{
+      border:solid red;
+      
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
