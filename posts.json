@@ -1,23 +1,23 @@
 [
   { 
-    "Month":"December"
-    "Date": "December 1"
+    "Month":"December",
+    "Date": "December 1",
     "title": "First Post",
     "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "picture": " ",
     "tag": " "    
   },
   {
-    "Month":"November"
-    "Date": "November 1"
+    "Month":"November",
+    "Date": "November 1",
     "title": "Second Post",
     "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "picture": " ",
     "tag": " "   
   },
    {
-    "Month":"October"
-    "Date": "October 1"
+    "Month":"October",
+    "Date": "October 1",
     "title": "Colon joined haya-labo class!! ",
     "content": "Colon's first day.",
     "picture": "https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmonkiti.net%2Ftoipu-doru.jpg&f=1",  
