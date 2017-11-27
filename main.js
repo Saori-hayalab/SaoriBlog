@@ -3,25 +3,25 @@ $(document).ready(function() {
 
   let postsUrl = 'https://raw.githubusercontent.com/Saori-hayalab/SaoriBlog/master/posts.json';
   let $postsDiv = $('#container');
-  let numberOfPost = 1
+  // let numberOfPost = 1
 
   $.get(postsUrl)
       .done(function(data) {
         console.log('data:', data);
+        let $post = $(".post-container").first();
         let posts = JSON.parse(data);
         for (let post of posts) {
         // let $post = $(".post-container").first().clone(true, true);
         // numberOfPost = numberOfPost + 1; 
         // $pictureContainer.attr("id", "pictureContainer1" + numberOfPhotos);
-          let $postContainer = $(".post-container").second();
-          let $post = $postsDiv.append($postContainer);
+          // let $postContainer = (".post-container").second();
           
           let $title = $('<h2>');
           $title.text(post.title);
           $post.append($title);
           
-          let $PostDate = $('<h5>')
-          $title.text(post.Date);
+          let $PostDate = $('<h5>');
+          $PostDate.text(post.Date);
           $post.append($PostDate);
           
 
