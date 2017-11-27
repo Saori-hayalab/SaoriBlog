@@ -15,6 +15,8 @@ $(document).ready(function() {
         // $pictureContainer.attr("id", "pictureContainer1" + numberOfPhotos);
           let $postContainer = $("#post-container")
           let $post = $postsDiv.append($postContainer);
+          
+          
           let $title = $('<h2>');
           $title.text(post.title);
           $post.append($title);
