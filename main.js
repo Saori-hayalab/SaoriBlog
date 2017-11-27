@@ -13,16 +13,15 @@ $(document).ready(function() {
         // let $post = $(".post-container").first().clone(true, true);
         // numberOfPost = numberOfPost + 1; 
         // $pictureContainer.attr("id", "pictureContainer1" + numberOfPhotos);
-          let $postContainer = $("#post-container")
+          let $postContainer = $(".post-container").second();
           let $post = $postsDiv.append($postContainer);
-          
           
           let $title = $('<h2>');
           $title.text(post.title);
           $post.append($title);
           
           let $PostDate = $('<h5>')
-          $title.text(post.PostedMonth);
+          $title.text(post.Date);
           $post.append($PostDate);
           
 
