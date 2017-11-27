@@ -1,7 +1,7 @@
 "use strict"
 $(document).ready(function() {
 
-  let postsUrl = 'https://raw.githubusercontent.com/Saori-hayalab/Saori-s-blog/master/posts.json';
+  let postsUrl = 'https://raw.githubusercontent.com/Saori-hayalab/SaoriBlog/master/posts.json';
   let $postsDiv = $('#container');
   let numberOfPost = 1
 
