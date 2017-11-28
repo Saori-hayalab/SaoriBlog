@@ -8,7 +8,12 @@ $(document).ready(function() {
   $.get(postsUrl)
       .done(function(data) {
         console.log('data:', data);
-        let $post = $(".post-container").first();
+        //Classの形で抽出したい
+        // let $postContainer = $(".post-container");
+        // let $container = $('#container');
+        // let $container.append($postContainer);
+       
+　　　　let post = $('<div>');       
         let posts = JSON.parse(data);
         for (let post of posts) {
         // let $post = $(".post-container").first().clone(true, true);
@@ -32,10 +37,7 @@ $(document).ready(function() {
           let $picture = $('<img>');
           $picture.attr("src",post.picture);
           $post.append($picture);
-          
-        //   let $tag = $("<a>").append("11月")
-        //   $tag.attr("href",post.picture);
-        //   $post.append($tag);
+
           
 
           $postsDiv.append($post);
