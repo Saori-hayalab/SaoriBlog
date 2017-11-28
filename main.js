@@ -28,6 +28,10 @@ $(document).ready(function() {
           $title.text(post.title);
           $post.append($title);
           
+          let $picture = $('<img>');
+          $picture.attr("src",post.picture);
+          $post.append($picture);
+          
           let $PostDate = $('<h5>');
           $PostDate.text(post.Date);
           $post.append($PostDate);
@@ -37,9 +41,7 @@ $(document).ready(function() {
           $content.text(post.content);
           $post.append($content);
          
-          let $picture = $('<img>');
-          $picture.attr("src",post.picture);
-          $post.append($picture);
+        
 
           $postsDiv.append($post);
         
