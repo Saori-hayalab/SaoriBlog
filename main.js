@@ -13,15 +13,16 @@ $(document).ready(function() {
         // let $container = $('#container');
         // let $container.append($postContainer);
        
-　　　　let post = $('<div>');       
+　　　      
         let posts = JSON.parse(data);
         for (let post of posts) {
         // let $post = $(".post-container").first().clone(true, true);
         // numberOfPost = numberOfPost + 1; 
         // $pictureContainer.attr("id", "pictureContainer1" + numberOfPhotos);
           // let $postContainer = (".post-container").second();
-          
-          let $title = $('<h2>');
+          let post = $('#container'); 
+          　
+          let $title = $('<h>');
           $title.text(post.title);
           $post.append($title);
           
@@ -38,11 +39,10 @@ $(document).ready(function() {
           $picture.attr("src",post.picture);
           $post.append($picture);
 
-          
-
           $postsDiv.append($post);
         }
       })
+      
       .fail(function(err) {
         console.log('There was an error fetching posts:', err);
       });
