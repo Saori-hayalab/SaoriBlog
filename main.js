@@ -1,4 +1,5 @@
 "use strict"
+
 $(document).ready(function() {
 
   let postsUrl = 'https://raw.githubusercontent.com/Saori-hayalab/SaoriBlog/master/posts.json';
@@ -13,14 +14,13 @@ $(document).ready(function() {
         // let $container = $('#container');
         // let $container.append($postContainer);
        
-        let posts = JSON.parse(data);
-        for (let post of posts) {
         // let $post = $(".post-container").first().clone(true, true);
         // numberOfPost = numberOfPost + 1; 
         // $pictureContainer.attr("id", "pictureContainer1" + numberOfPhotos);
         // let $postContainer = (".post-container").second();
         
         let posts = JSON.parse(data);
+        
         for (let post of posts) {
           let $post = $('<div>');
           　
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
           $postsDiv.append($post);
         
-        }
+      }
       })
       
       .fail(function(err) {
